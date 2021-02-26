@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name Interface_USB)(type Legacy)(uri ${KIPRJMOD}/Interface_USB.lib)(options "")(descr ""))
   (lib (name USBmicro-no-id)(type Legacy)(uri ${KIPRJMOD}/USBmicro-no-id.lib)(options "")(descr ""))
+  (lib (name CH341Apro-rescue)(type Legacy)(uri ${KIPRJMOD}/CH341Apro-rescue.lib)(options "")(descr ""))
 )

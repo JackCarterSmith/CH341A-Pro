@@ -40,25 +40,25 @@ $EndComp
 $Comp
 L Device:R_Pack04_Split RN1
 U 1 1 5F0C60C3
-P 6000 1650
-F 0 "RN1" H 6088 1696 50  0000 L CNN
-F 1 "222" H 6088 1605 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5920 1650 50  0001 C CNN
-F 3 "~" H 6000 1650 50  0001 C CNN
-F 4 "C12001" H 6000 1650 50  0001 C CNN "LCSC"
-	1    6000 1650
+P 6000 1950
+F 0 "RN1" H 6088 1996 50  0000 L CNN
+F 1 "222" H 6088 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5920 1950 50  0001 C CNN
+F 3 "~" H 6000 1950 50  0001 C CNN
+F 4 "C12001" H 6000 1950 50  0001 C CNN "LCSC"
+	1    6000 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN1
 U 2 1 5F0C7BA5
-P 5850 1550
-F 0 "RN1" H 5750 1750 50  0000 C CNN
-F 1 "222" H 5750 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5770 1550 50  0001 C CNN
-F 3 "~" H 5850 1550 50  0001 C CNN
-F 4 "C12001" H 5850 1550 50  0001 C CNN "LCSC"
-	2    5850 1550
+P 5850 1650
+F 0 "RN1" H 5700 1700 50  0000 C CNN
+F 1 "222" H 5700 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5770 1650 50  0001 C CNN
+F 3 "~" H 5850 1650 50  0001 C CNN
+F 4 "C12001" H 5850 1650 50  0001 C CNN "LCSC"
+	2    5850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -303,7 +303,7 @@ VCC
 Text Label 6400 3950 2    50   ~ 0
 GND
 $Comp
-L CH341Apro-rescue:USB_A-Connector-CH341Apro-rescue J1
+L CH341Apro-rescue:USB_A-Connector-CH341Apro-rescue-CH341Apro-rescue J1
 U 1 1 5F58AEC8
 P 850 2150
 F 0 "J1" H 907 2617 50  0000 C CNN
@@ -413,11 +413,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 2900 6200 2900
 Wire Wire Line
-	4750 2400 5850 2400
-Wire Wire Line
-	5850 2400 6850 2400
-Connection ~ 5850 2400
-Wire Wire Line
 	4750 2300 6750 2300
 Wire Wire Line
 	6850 4150 6850 2400
@@ -501,8 +496,6 @@ Wire Wire Line
 	5300 3450 5300 3200
 Connection ~ 5300 3200
 Wire Wire Line
-	5300 3200 6000 3200
-Wire Wire Line
 	5700 3650 5450 3650
 Wire Wire Line
 	5450 3650 5450 3300
@@ -536,9 +529,6 @@ Wire Wire Line
 	7200 2800 6300 2800
 Wire Wire Line
 	6300 2800 6300 3200
-Wire Wire Line
-	6300 3200 6000 3200
-Connection ~ 6000 3200
 Wire Wire Line
 	6650 3750 6650 2600
 Connection ~ 6650 2600
@@ -589,7 +579,7 @@ U 1 1 603A2DA5
 P 2900 2300
 F 0 "JP1" V 3000 2450 50  0000 R CNN
 F 1 " " V 2855 2212 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2900 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 2300 50  0001 C CNN
 F 3 "~" H 2900 2300 50  0001 C CNN
 	1    2900 2300
 	0    -1   -1   0   
@@ -600,7 +590,7 @@ U 1 1 604BEDAC
 P 5200 1350
 F 0 "JP2" H 5200 1555 50  0000 C CNN
 F 1 "V_SEL" H 5200 1464 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 5200 1350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5200 1350 50  0001 C CNN
 F 3 "~" H 5200 1350 50  0001 C CNN
 	1    5200 1350
 	1    0    0    -1  
@@ -635,19 +625,6 @@ Connection ~ 5400 1050
 Wire Wire Line
 	5400 1050 5950 1050
 Wire Wire Line
-	5950 1350 5850 1350
-Wire Wire Line
-	5850 1350 5850 1400
-Wire Wire Line
-	5950 1350 6000 1350
-Wire Wire Line
-	6000 1350 6000 1500
-Connection ~ 5950 1350
-Wire Wire Line
-	5850 1700 5850 2400
-Wire Wire Line
-	6000 1800 6000 3200
-Wire Wire Line
 	5450 2200 7200 2200
 Connection ~ 5450 2200
 Wire Wire Line
@@ -656,4 +633,29 @@ Text Label 3600 1050 0    50   ~ 0
 3V3
 Text Label 1400 650  0    50   ~ 0
 5V
+Wire Wire Line
+	5300 3200 6000 3200
+Wire Wire Line
+	6000 2100 6000 3200
+Connection ~ 6000 3200
+Wire Wire Line
+	6000 3200 6300 3200
+Wire Wire Line
+	4750 2400 5850 2400
+Wire Wire Line
+	5850 1800 5850 2400
+Connection ~ 5850 2400
+Wire Wire Line
+	5850 2400 6850 2400
+Wire Wire Line
+	5850 1500 5850 1450
+Wire Wire Line
+	5850 1450 5950 1450
+Wire Wire Line
+	5950 1450 5950 1350
+Wire Wire Line
+	5950 1450 6000 1450
+Wire Wire Line
+	6000 1450 6000 1800
+Connection ~ 5950 1450
 $EndSCHEMATC
